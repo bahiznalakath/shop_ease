@@ -31,7 +31,7 @@ class AddProductController extends GetxController {
     if (pickedFile != null) {
       productImagePath.value = pickedFile.path;
     } else {
-      Get.snackbar('Error', 'No image selected.');
+      showCustomSnackBar('No image selected.', isError: true);
     }
   }
 

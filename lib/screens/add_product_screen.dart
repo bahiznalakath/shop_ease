@@ -99,7 +99,7 @@ class AddProductScreen extends StatelessWidget {
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all(primaryColor),
                       ),  onPressed: controller.pickImage,
-                      child: const Text('Upload Image'),
+                      child: const Text('Upload Image',style: TextStyle(color: colorWhite),),
                     ),
                     const SizedBox(width: 16),
                     controller.productImagePath.isNotEmpty
